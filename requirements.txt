@@ -1,0 +1,15 @@
+tqdm
+ruamel.yaml
+mypy
+seaborn
+jupyterthemes
+numba
+Pillow
+scikit-learn
+chainer
+cupy-cuda90
+optuna
+colorama
+pygments
+nltk
+h5py

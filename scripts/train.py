@@ -12,6 +12,10 @@ from chainer import training
 from chainer.training import extensions
 from chainer.training import triggers
 
+import sys
+sys.path.append(str(pathlib.Path().absolute()).split("/scripts")[0])
+
+
 from lib import models, dataset
 
 from lib.miscs.hyperparams import Hyperparams
@@ -201,7 +205,6 @@ def visualize(hpt, train, test, avg_elbo_loss):
 
 
 def main(hpt):
-
     logger.info('build model')
     avg_elbo_loss = get_model(hpt)
     if hpt.general.gpu >= 0:
